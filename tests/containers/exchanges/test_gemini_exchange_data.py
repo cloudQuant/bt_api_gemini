@@ -1,0 +1,15 @@
+"""Tests for GeminiExchangeData container."""
+
+from __future__ import annotations
+
+from bt_api_gemini.exchange_data import GeminiExchangeData
+
+
+class TestGeminiExchangeData:
+    """Tests for GeminiExchangeData."""
+
+    def test_init(self):
+        """Test initialization."""
+        exchange = GeminiExchangeData()
+
+        assert exchange.exchange_name == "GEMINI"
