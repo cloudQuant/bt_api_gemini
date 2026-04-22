@@ -12,11 +12,10 @@ from bt_api_base.feeds.capability import Capability
 from bt_api_base.feeds.feed import Feed
 from bt_api_base.feeds.http_client import HttpClient
 from bt_api_base.logging_factory import get_logger
-
 from bt_api_base.rate_limiter import RateLimiter, RateLimitRule, RateLimitScope, RateLimitType
 
-from bt_api_gemini.exchange_data import GeminiExchangeDataSpot
 from bt_api_gemini.errors import GeminiErrorTranslator
+from bt_api_gemini.exchange_data import GeminiExchangeDataSpot
 
 
 class GeminiRequestData(Feed):

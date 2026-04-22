@@ -38,7 +38,7 @@ line-length = 100
 target-version = "py39"
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "I"]
+select = ["I", "UP", "E", "F", "W", "TRY003"]
 ignore = []
 
 [tool.hatch.build.targets.wheel]

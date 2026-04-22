@@ -11,9 +11,17 @@ pip install bt_api_gemini
 ```
 
 ```python
-from bt_api_gemini import GeminiRequestDataSpot
-feed = GeminiRequestDataSpot(api_key="your_key", secret="your_secret")
-ticker = feed.get_ticker("BTCUSD")
+from bt_api_py import BtApi
+
+api = BtApi(exchange_kwargs={
+    "GEMINI___SPOT": {
+        "api_key": "your_api_key",
+        "secret": "your_secret",
+    }
+})
+
+ticker = api.get_tick("GEMINI___SPOT", "BTCUSD")
+print(ticker)
 ```
 
 ## 中文
@@ -27,9 +35,17 @@ pip install bt_api_gemini
 ```
 
 ```python
-from bt_api_gemini import GeminiRequestDataSpot
-feed = GeminiRequestDataSpot(api_key="your_key", secret="your_secret")
-ticker = feed.get_ticker("BTCUSD")
+from bt_api_py import BtApi
+
+api = BtApi(exchange_kwargs={
+    "GEMINI___SPOT": {
+        "api_key": "your_api_key",
+        "secret": "your_secret",
+    }
+})
+
+ticker = api.get_tick("GEMINI___SPOT", "BTCUSD")
+print(ticker)
 ```
 
 ## API Reference

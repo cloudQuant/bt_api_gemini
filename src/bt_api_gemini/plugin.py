@@ -9,7 +9,6 @@ except ImportError:
 
 from bt_api_gemini.feeds.live_gemini import GeminiRequestDataSpot
 
-
 if PluginMetadata is not None and PluginInfo is not None:
     GEMINI_PLUGIN_INFO = PluginInfo(
         name="bt_api_gemini",

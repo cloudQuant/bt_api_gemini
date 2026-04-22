@@ -28,7 +28,9 @@ class GeminiTickerData(TickerData):
         if self.has_been_json_encoded:
             return self
         if isinstance(self.ticker_info, dict):
-            self.last_price = float(self.ticker_info.get("close", self.ticker_info.get("last", 0)) or 0)
+            self.last_price = float(
+                self.ticker_info.get("close", self.ticker_info.get("last", 0)) or 0
+            )
             self.high = float(self.ticker_info.get("high", 0)) or 0
             self.low = float(self.ticker_info.get("low", 0)) or 0
             vol = self.ticker_info.get("volume", {})

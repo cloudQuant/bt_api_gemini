@@ -1,13 +1,12 @@
 from __future__ import annotations
 
 from typing import Any
-from urllib.parse import urlencode
 
 from bt_api_base.functions.utils import update_extra_data
 
+from bt_api_gemini.containers.orders import GeminiRequestOrderData
 from bt_api_gemini.exchange_data import GeminiExchangeDataSpot
 from bt_api_gemini.feeds.live_gemini.request_base import GeminiRequestData
-from bt_api_gemini.containers.orders import GeminiRequestOrderData
 
 
 class GeminiRequestDataSpot(GeminiRequestData):

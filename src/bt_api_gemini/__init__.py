@@ -1,14 +1,14 @@
 __version__ = "2.0.0"
 
-from bt_api_gemini.feeds.live_gemini import GeminiRequestDataSpot
 from bt_api_gemini.containers import (
     GeminiRequestBalanceData,
     GeminiRequestBarData,
     GeminiRequestOrderBookData,
     GeminiRequestOrderData,
-    GeminiRequestTradeData,
     GeminiRequestTickerData,
+    GeminiRequestTradeData,
 )
+from bt_api_gemini.feeds.live_gemini import GeminiRequestDataSpot
 
 __all__ = [
     "__version__",
