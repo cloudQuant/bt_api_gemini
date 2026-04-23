@@ -2,7 +2,6 @@ from bt_api_base.containers.tickers.ticker import TickerData
 
 
 class GeminiTickerData(TickerData):
-
     def __init__(
         self,
         ticker_info,
@@ -67,7 +66,6 @@ class GeminiTickerData(TickerData):
 
 
 class GeminiRequestTickerData(GeminiTickerData):
-
     def __init__(
         self,
         data,
